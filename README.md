@@ -69,6 +69,44 @@ first to see the all routes , php artisan route:list
 and see where login and register page is created
 Full route List will be visible to display
 
+
+-> Add guard in config\auth.php
+```bash
+  'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+        // this customer guards is for admin
+        'admin' => [
+            'driver'=>'session',
+            'provider'=>'admins',
+        ]
+    ],
+
+  -> Add provider in config\auth.php  
+
+   'providers' => [
+
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\User::class,
+        ],
+
+        // this provider of guard linked above named 'admins'
+
+        'admins'=> [
+            'driver'=>'eloquent',
+            'model'=>App\Models\Admin::class,
+        ]
+
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
+    ],
+```
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
