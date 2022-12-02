@@ -68,6 +68,7 @@ To Customize Login and Registration File
 first to see the all routes , php artisan route:list
 and see where login and register page is created
 Full route List will be visible to display
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
