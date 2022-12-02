@@ -6,5 +6,6 @@
     </x-slot>
 
     <h2>this is dashboard</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, in!</p>
    
 </x-app-layout>

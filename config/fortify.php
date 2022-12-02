@@ -60,6 +60,7 @@ return [
     | and the user is authenticated. You are free to change this value.
     |
     */
+/* This is redirect to Home Automatically */
 
     'home' => RouteServiceProvider::HOME,
 
@@ -134,7 +135,7 @@ return [
     'features' => [
         Features::registration(),
         Features::resetPasswords(),
-        // Features::emailVerification(),
+         Features::emailVerification(),
         Features::updateProfileInformation(),
         Features::updatePasswords(),
         Features::twoFactorAuthentication([

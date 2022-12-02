@@ -21,13 +21,20 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## JETSTRIM With Multi-Auth
+It provides , register,login,multi-auth,two-factor-auth, browser session of jetsrim app, Delete account with profile setting.
+to use it in project is more convenient to other.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Automatically, Many apps is generated in config,views ,app related to JETSTRIM.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+config/fortify.app in use ----
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+In Auth system with profile page of Jetsrim app is controlled by fortify.php under config directory.If one of features is hidded from fetures elements is will be removed from profile page of jetstrim app.
+
+
+config/jetstrim.php
+
+
 
 ## Laravel Sponsors
 
