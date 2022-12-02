@@ -29,13 +29,45 @@ Automatically, Many apps is generated in config,views ,app related to JETSTRIM.
 
 config/fortify.app in use ----
 
+```bash
+these features or you can even remove all/one of these/that if you need to.
+ 'features' => [
+        Features::registration(),
+        Features::resetPasswords(),
+         Features::emailVerification(),
+        Features::updateProfileInformation(),
+        Features::updatePasswords(),
+        Features::twoFactorAuthentication([
+            'confirm' => true,
+            'confirmPassword' => true,
+            // 'window' => 0,
+        ]),
+    ],
+
+```
+
 In Auth system with profile page of Jetsrim app is controlled by fortify.php under config directory.If one of features is hidded from fetures elements is will be removed from profile page of jetstrim app.
 
 
 config/jetstrim.php
 
-
-
+The Provided Feature for app 
+```bash
+it\'s easily customizable to enable and disable.
+Feature api() let third-party to use your app with giving a secred api token
+ 'features' => [
+         Features::termsAndPrivacyPolicy(), // checkbox with agree terms and policy
+         Features::profilePhotos(),
+            // Features::api(),
+         Features::teams(['invitations' => true]),
+        Features::accountDeletion(),
+    ],
+```
+To Customize Login and Registration File
+---
+first to see the all routes , php artisan route:list
+and see where login and register page is created
+Full route List will be visible to display
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
